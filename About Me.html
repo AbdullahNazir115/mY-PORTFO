@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400&family=Roboto:wght@300;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="icon" href="briefcase.png">
+    
+    <title>About Me</title>
+</head>
+<style>
+/* .nav p{
+    margin: 0 30px;
+} */
+.offcanvas{
+    max-width: 80%;
+}
+.off-canvas{
+    display: none;
+}
+
+@media screen and (max-width:760px) {
+.off-canvas{
+    display: block;
+    margin: -3px 0px;
+}
+.tog-4{
+    display: flex;
+}
+
+.navbar .nav{
+    display: none;
+}
+.hide-4{
+    display:none;
+}
+.moon{
+    display: none;
+}
+.sun{
+}
+.name{
+    /* margin: 0 20px; */
+}
+.off-canvas{
+    /* margin: 0 20px; */
+    /* background-color: black; */
+}
+body .contact .sun{
+display: block;
+padding: 4px 10px;
+
+}
+.image-changer{
+    /* width: 20px; */
+}
+.navbar .contact{
+    margin: 0 0;
+}
+
+
+}
+@media screen and (max-width:600px) {
+
+    .offcanvas-body ul a{
+        color: white;
+}
+}
+.offcanvas-body ul{
+    display: flex;
+  flex-direction: column;
+}
+.offcanvas-body ul a{
+margin: 20px 0;
+}
+
+
+.name{
+    margin: 0 30px;
+}
+
+.contact{
+    margin: 0 30px;
+}
+
+@media screen and (min-width:950px) {
+
+.contact{
+margin: 0 31px;
+
+}
+.name{
+margin: 0 60px;
+}
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing{
+    background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+}
+
+@media screen and (max-width:320px) {
+
+.covered .text pre{
+
+}
+.copyright{
+    font-size: 14px;
+}
+a{
+    margin: 0 20px;
+}
+}
+
+a{
+color: #676767;
+transition: color 0.5s ease; /* 0.5s duration with ease transition */
+
+text-decoration: none;
+margin: 0 30px;
+
+    }
+
+
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a:hover{
+color: white;
+
+}
+    a{
+color: #676767;
+transition: color 0.5s ease; /* 0.5s duration with ease transition */
+
+text-decoration: none;
+
+    }
+    .copyright span{
+    color: #5B78F6;
+    margin: 0 3px;
+}
+
+    body{
+        background-color: #0f0e0e;
+    font-family: 'Nunito Sans', sans-serif;
+
+    }
+    .navbar{
+        display: flex;
+      justify-content: space-between;
+      height: 124px;
+      align-items: center;
+    }
+    .nav{
+        display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* width: 200px;     */
+    }
+    .nav-2{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      color: white;
+    }
+    .nav-2 p{
+       /* margin: 0 30px;  */
+    }
+    .middle-section{
+        display: flex;
+      justify-content: center;
+      height: 353px;
+    }
+    .left , .right{
+    display: flex;
+    /* flex-basis: 50%; */
+    }
+    .navbar h1{
+        color: white;
+    }
+
+    .contact button{
+       padding: 12px 30px;
+       border-radius: 15px;
+      border: 0;
+      background: #323232;
+      color: white;
+    
+    }
+    .left{
+        display: flex;
+      justify-content: end;
+      /* flex-direction: column; */
+      /* height: 1000px; */
+      margin-right: 29px;
+      margin-top: 61px;
+    }
+    .right{
+        display: flex;
+      justify-content: start;
+      /* height: 1000px; */
+      margin-top: 41px;
+      flex-direction: column;
+      height: 342px;
+    
+    }
+    .first-component{
+        background-color: #5b5b5ba3;
+        background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+      border-radius: 42px;
+      width: 338px;
+  height: 302px;
+    }
+    
+    .first-component-2{
+      
+      /* background-color: #5b5b5ba3;
+      width: 500px;
+      height: 53px;
+      border-radius: 82px;
+      width: 556px; */
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .first-component-2 h1{
+        color: white;
+        font-size: 60px;
+        transform: translateY(-6px);
+        letter-spacing: 10px;
+    }
+    .second-component-1{
+      
+       display: flex;
+     
+       
+    }
+    .left-1{
+        background-color: #5b5b5ba3;
+      height: 250px;
+      border-radius: 42px;
+      width: 714px;
+      margin: -9px 0px;
+      /* background-image: linear-gradient(120deg, #323232 0%, #0d0c0c 100%); */
+      /* border: 1px solid #222020; */
+      background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+    }
+    .intro{
+        height: 153px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    }
+    .intro h1{
+        margin: 7px 39px;
+        color: white;
+    }
+    /* .intro p{
+        text-align: center;
+        color: #9F9F9F;
+        margin: 0 26px;
+  transform: translateX(-8px);
+    } */
+
+    .right-1{
+        background-color: #5b5b5ba3;
+      width: 266px;
+      height: 222px;
+      border-radius: 42px;
+      margin:28px 23px;
+    
+    }
+    .second-component{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 215px;
+    }
+    
+    .second-component-2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       /* height: 263px; */
+       /* height: 215px; */
+    }
+    .inlets-1{
+        background-color: #5b5b5ba3;
+      width: 266px;
+      height: 222px;
+      border-radius: 42px;
+      margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+    }
+    .inlets-2{
+        background-color: #5b5b5ba3;
+        width: 544px;
+      height: 222px;
+      border-radius: 42px;
+      margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+    }
+    
+    .inlets-2-2{
+        background-color: #5b5b5ba3;
+        width: 551px;
+  height: 290px;
+      border-radius: 42px;
+      margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+    }
+    .inlets-2-2-exp{
+        background-color: #5b5b5ba3;
+        width: 551px;
+  height: 290px;
+      border-radius: 42px;
+      margin: 28px 10px;
+      background-image: linear-gradient(120deg, #202020 0%, #111010 100%);
+
+    }
+    
+    
+    .inlets-3{
+    background-color: #5b5b5ba3;
+  width: 266px;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+.img-1{
+    height: 146px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.about-me h1{
+    font-size: 24px;
+    color: white;
+}
+.details{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+}
+.l2 img{
+    transform: rotate(92deg);
+    cursor: pointer;
+}
+.about-me .img-1 img{
+    margin: 0 15px;
+}
+/* .details-2 .l{
+    margin: 0 35px;
+}
+
+.details-2 .l2{
+    margin: 0 35px;
+} */
+    .me{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        color: white;
+        height: 150px;
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        /* height: 150px; */
+    }
+    footer{
+        height: 374px;
+    }
+    .left-corner{
+        width: 100px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    }
+
+    .about-me .img-1 img{
+    margin: 0 15px;
+}
+.about-me h1{
+    font-size: 24px;
+    color: white;
+}
+
+.about-me-2 h1{
+    font-size: 31px;
+    color: white;
+}
+.about-me p{
+    font-size: 12px;
+  color: #BCBCBCB7;
+  margin-bottom: 3px;
+  /* margin-left: -20px; */
+
+}
+
+.thanks{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+ .white{
+    color: white;
+    
+}
+.one-t{
+    display: flex;
+    flex-direction: column;
+
+}
+.blue{
+    color: #0858CA;
+    margin: 0 10px;
+}
+   
+.inlets-2-2-2{
+    background-color: #5b5b5ba3;
+    width: 573px;
+    /* justify-content: center; */
+  height: 224px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #111010 100%);
+  display: flex;
+  /* align-items: center; */
+
+}
+
+.my-image{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.my-image img{
+    width: 303px;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 29px;
+}
+.exp h1{
+color: white;
+font-size: 19px;
+margin: 11px 0px;
+}
+.exp p{
+    color: #BCBCBC99;
+    margin: 0 0;
+}
+.exp{
+    display: flex;
+  flex-direction: column;
+  margin: 0 43px;
+  height: 100%;
+  justify-content: center;
+}
+.exp-part-1{
+    margin: 10px 0;
+}
+
+.exp-part-2{
+    margin: 10px 0;
+}
+.exp-part-3{
+    margin: 10px 0;
+}
+
+@media screen and (max-width:700px) {
+.right{
+    height: 100%;
+}
+
+.first-component {
+  background-color: #5b5b5ba3;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+  border-radius: 42px;
+  width: 298px;
+  height: 293px;
+}
+
+
+.my-image img {
+  width: 250px;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 29px;
+}
+
+}
+
+@media screen and (max-width:812px) {
+    .first-component {
+  background-color: #5b5b5ba3;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+  border-radius: 42px;
+  width: 298px;
+  height: 293px;
+}
+
+
+.my-image img {
+  width: 250px;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 29px;
+}
+    .inlets-2-2-exp {
+  width: 95vw;
+  height: 100%;
+}
+.inlets-2-2 {
+  width: 95vw;
+  /* height: 100%; */
+}
+
+
+
+.second-component-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+}
+
+@media screen and (max-width:412px) {
+    .first-component-2 h1 {
+    /* color: white; */
+    font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .my-image img {
+    width: 226px;
+    height: 239px;
+    object-fit: cover;
+    border-radius: 29px;
+  }
+
+  .first-component {
+    background-color: #5b5b5ba3;
+    background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+    border-radius: 42px;
+    width: 260px;
+    height: 271px;
+  }
+
+.left-1{
+    height: 400px;
+}
+.intro{
+    height: 230px;
+    margin: 20px 0;
+    justify-content: flex-start;
+}
+}
+
+@media screen and (max-width:494px) {
+
+    .left-corner{
+    margin-bottom: 15px;
+}
+}
+
+
+@media screen and (max-width:600px) {
+
+.intro{
+    height: 170px;
+    
+}
+}
+
+@media screen and (max-width:500px) {
+
+
+}
+
+
+@media screen and (max-width:370px) {
+
+    .my-image img {
+    width: 213px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 29px;
+  }
+  .first-component {
+    background-color: #5b5b5ba3;
+    background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+    border-radius: 42px;
+    width: 245px;
+    height: 243px;
+  }
+  
+}
+
+
+@media screen and (max-width:295px) {
+.second-component .thanks{
+    /* transform: translateY(21px); */
+
+    margin: 0 -22px;
+    
+}
+.thanks .white{
+    font-size: 22px;
+}
+.thanks .blue{
+    font-size: 22px;
+}
+.left-corner .thanks{
+}
+
+ body .inlets-2-2-2 {
+    /* width: 96vw; */
+    height: 231px;
+  }
+
+     body .inlets-2-2-exp {
+  width: 87vw;
+  height: 100%;
+
+}
+ body .inlets-2-2 {
+  width: 87vw;
+  /* height: 100%; */
+}
+ body .inlets-1 {
+  /* background-color: #5b5b5ba3; */
+  width: 87vw;
+}
+
+ body .inlets-2-2-2 {
+  /* background-color: #5b5b5ba3; */
+  width: 87vw;
+}
+
+ body .inlets-3 {
+  /* background-color: #5b5b5ba3; */
+  width: 87vw;
+}
+
+
+}
+
+@media screen and (max-width: 476px) {
+  .white {
+    font-size: 25px;
+  }
+.thanks{
+    margin: 0 -13px;
+    /* transform: translateY(15px); */
+}
+  .blue{
+    font-size: 25px;
+  }
+  .one-t{
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .second-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.inlets-1 {
+  /* background-color: #5b5b5ba3; */
+  width: 95vw;
+}
+.inlets-2-2-2 {
+  /* background-color: #5b5b5ba3; */
+  width: 95vw;
+}
+
+.inlets-3 {
+  /* background-color: #5b5b5ba3; */
+  width: 95vw;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+  }
+
+    .middle-section {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+.first-component-2 h1 {
+  color: white;
+  font-size: 25px;
+  transform: translateY(0);
+  letter-spacing: 5px;
+}
+.first-component-2{
+    margin-bottom: 50px;
+}
+.left-1{
+    width: 100%;
+    margin: -9px 15px;
+}
+.mid-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.mid-1{
+    text-align: start;
+}
+.mid-2{
+    text-align: center;
+  color: #9F9F9F;
+  margin: 0 26px;
+  transform: translateX(-8px);
+}
+.navbar .sun{
+    padding: 9px 30px;
+}
+@media screen and (min-width:751px) and (max-width:886px)  {
+
+.contact .sun{
+    padding: 9px 12px;
+}
+.contact .moon{
+    padding: 12px 15px;
+}
+.contact a{
+    margin: 0 16px;
+}
+.contact{
+    margin: 0 17px;
+}
+}
+
+.btn{
+    border: none;
+    background-color: #0f0e0e;
+    color: white;
+
+
+}
+.btn:hover{
+    background-color: #0f0e0e;
+
+}
+
+@media screen and (min-width:751px) and (max-width:886px)  {
+
+.contact .sun{
+    padding: 9px 12px;
+}
+.contact .moon{
+    padding: 12px 15px;
+}
+.contact a{
+    margin: 0 16px;
+}
+.contact{
+    margin: 0 17px;
+}
+}
+
+@media screen and (max-width: 430px) {
+  body .navbar .sun {
+    width: 40px;
+    height: 37px;
+    padding: 0 0;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width:1160px)  {
+
+    .first-component {
+  background-color: #5b5b5ba3;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+  border-radius: 42px;
+  width: 300px;
+  height: 279px;
+}
+.mid-1 {
+  margin: 0 40px;
+  color: #9F9F9F;
+  text-align: center;
+}
+.left-1{
+    width: 100%;
+}
+.de-margin{
+    margin: 0 0;
+}
+.my-image img {
+  width: 263px;
+  height: 243px;
+  object-fit: cover;
+  border-radius: 29px;
+}
+.inlets-2-2-exp {
+  background-color: #5b5b5ba3;
+  width: 470px;
+  height: 290px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #202020 0%, #111010 100%);
+}
+.second-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 215px;
+  margin: 0 19px;
+}
+.inlets-2-2 {
+  /* background-color: #5b5b5ba3; */
+  width: 470px;
+  height: 290px;
+  border-radius: 42px;
+  margin: 28px 10px;
+}
+.first-component-2 h1 {
+  /* color: white; */
+  font-size: 45px;
+  transform: translateY(-6px);
+  letter-spacing: 10px;
+}
+.inlets-3 {
+  background-color: #5b5b5ba3;
+  width: 24vw;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+}
+.inlets-1 {
+  background-color: #5b5b5ba3;
+  width: 24vw;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+}
+
+.inlets-2 {
+  background-color: #5b5b5ba3;
+  width: 32vw;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+}
+.right {
+  display: flex;
+  justify-content: start;
+  height: 1000px;
+  margin-top: 56px;
+  flex-direction: column;
+  height: 342px;
+}
+.middle-section {
+  display: flex;
+  justify-content: center;
+  height: 353px;
+  margin: 0 30px;
+}
+
+}
+
+@media screen and (min-width: 885px) and (max-width: 888px) {
+ body .contact {
+    margin: 0 16px;
+  }
+}
+
+    </style>
+<body>
+    
+        <div class="navbar">
+            <div class="name">
+                <a href="index.html" style="color: white;">       <h1 class="namer"
+                    >Abdullah </h1> </a> 
+
+            </div>
+
+            <div class="nav">
+                <a href="index.html"> <p>Home</p></a>
+                <a href="Projects.html"> <p>Projects</p></a>
+
+                <a href="About Me.html"> <p>About Me</p></a>
+        
+            </div>
+            <div class="tog-4">
+                <div class="contact">
+                  <a href="Contact Me .html" class="hide-4">  <button class="button-color moon">
+                    Contact
+                </button>
+            
+                
+            </a>
+                <button class="Dark-button sun">
+                 <img src="sun (2).png" alt="" width="30px" class="image-changer">
+             </button>
+                </div>
+                <div class="off-canvas">
+                   
+                      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-list fa-4x" viewBox="0 0 16 16" style="">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+            <!-- <div  class="ham-1"></div>
+            <div class="ham-1"></div>
+            <div class="ham-1"></div> -->
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel" style="visibility: hidden;">ABDULLAH</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            <ul>
+                                <a href="index.html">HOME</a>
+                                <a href="Projects.html">PROJECTS</a>
+                                <a href="About Me.html">ABOUT ME</a>
+                                <a href="My Cv.html">MY CV</a>
+                                <a href="Contact Me .html">CONTACT</a>
+                            </ul>
+                          </div>
+                         
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        
+        </div>
+        <div class="middle-section">
+        <div class="left">
+            <div class="first-component">
+        <div class="my-image">
+            <img src="IMG_E0262.JPG" alt="" >
+
+        </div>
+            </div>
+        
+            
+        
+        </div>
+        
+        <div class="right">
+        
+        <div class="first-component-2">
+            <img src="star-2.png" alt=""  width="48px" style="margin: 0 13px;transform: translateY(-6px);">  <h1 class="summary-3 ccc"> SELF-SUMMARY</h1> <img src="star-2.png" alt="" width="48px" style="transform: translateY(-4px);margin: 0 10px;">
+        </div>
+        
+        <div class="second-component-1">
+        
+            <div class="left-1">
+                <div class="left-corner">
+        <img src="icon2.png" alt="">
+    </div>
+
+    <div class="intro">
+        <h1>ABDULLAH NAZIR</h1>
+        <p class="mid-2">
+            I have a Good Grip on these three languages HTML ,CSS and
+,JAVASCRIPT/REACT I can Make Good Responsive Website Designs with a user friendly Interface I can
+make Static and Dynamic Single page Applications 
+<p style="margin: 0 40px;color: #9F9F9F;" class="mid-1"></p>  </p>
+    </div>
+
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        </div>
+        </div>
+
+        <div class="second-component-2">
+        
+                   
+                    
+            <div class="inlets-2-2-exp">
+            
+                <div class="exp">
+
+                    <div class="exp-part-1">
+                        <h1 style="margin: 0px 0px;">QUALIFICATION</h1>
+                    </div>
+
+
+                    <div class="exp-part-3">
+                        <p>2023</p>
+                        <h1 style="margin: 3px 0px;">Front End Web React Developer</h1>
+                        <p>Self Made</p>
+                    </div>
+
+               <div class="exp-part-1">
+                        <h1 style="margin: 0px 0px;">COURSES</h1>
+                    </div>
+
+                <div class="exp-part-2">
+                    <p>4/23-10/23</p>
+                    <h1 style="margin: 3px 0px;">Font End Web development Course</h1>
+                    <p>From Ideoversity</p>
+                </div>
+                
+               
+                
+
+</div>
+
+            </div>
+            
+            <div class="inlets-2-2">
+            
+                <div class="exp">
+                    <div class="exp-part-1">
+                    <h1 style="margin: 0px 0px;">EDUCATION</h1>
+                </div>
+                
+                <div class="exp-part-2">
+                    <p>2018-2020</p>
+                    <h1 style="margin: 3px 0px;">Matriculation</h1>
+                    <p>The Quaid School</p>
+                </div>
+                
+                <div class="exp-part-3">
+                    <p>2020-2022</p>
+                    <h1 style="margin: 3px 0px;">ICS (Intermediate in Computer Sciences)</h1>
+                    <p>The Kips College</p>
+                </div>
+                
+                </div>
+
+            </div>
+          
+            
+                </div>
+
+        <div class="second-component">
+        <a href="My Cv.html" class="de-margin">
+            <div class="inlets-1">
+                    <div class="about-me">
+                        <div class="img-1">
+                        <img src="project.png" alt="" width="110px">
+                    </div>
+                    
+                    <div class="details">
+                        <div class="l">
+                        <p>MORE ABOUT ME</p>
+                        <h1>My Cv</h1>
+                    </div>
+                    <div class="l2">
+                            <img src="up-arrow.png" alt="" width="30px">
+                    
+                    </div>
+                    </div>
+                    
+                    </div>
+                    
+            </div>
+        </a>
+                <div class="inlets-2-2-2">
+            
+                    <div class="left-corner">
+                        <img src="icon2.png" alt="">
+                    </div>
+                    <div class="thanks">
+                        <h1 class="white">THANKS FOR </h1>
+                   <div class="one-t">   <div class="new-kid"> <h1 class="white">VISITING MY</h1></div> <h1 class="blue">PORTFOLIO</h1> </div> 
+                    </div>
+
+            </div>
+            
+            <div class="inlets-3">
+                    <div class="about-me">
+                        <div class="img-1">
+                            <a href="https://www.linkedin.com/in/abdullah-nazir-01104a296/"   target="_main" style="margin: 0 0;">    <img src="linkedin.png" alt="" width="90px" style="cursor: pointer;"></a>
+                            <a href="https://github.com/AbdullahNazir115" style="margin: 0 0;" target="_main">   <img src="github (1).png" alt="" width="90px" style="cursor: pointer;"></a>
+                   
+                    </div>
+                    
+                    <div class="details">
+                        <div class="l">
+                        <p>STAY WITH ME</p>
+                        <h1>Profiles</h1>
+                    </div>
+                    <div class="l2">
+                            <img src="up-arrow.png" alt="" width="30px">
+                    
+                    </div>
+                    </div>
+                    
+                    </div>
+            </div>
+            
+                </div>
+        
+        
+                
+        
+                        <footer>
+                            <div class="me">
+                                <div class="name">
+                            <a href="index.html" style="color: white;">       <h1 class="namer-2">Abdullah </h1> </a> 
+                                 </div>
+                            </div>
+                            <div class="nav-2">
+                <a href="index.html" style="margin: 0 30px;"> <p>Home</p></a>
+                <a href="Projects.html" style="margin: 0 30px;"> <p>Projects</p></a>
+
+                <a href="About Me.html" style="margin: 0 30px;"> <p>About Me</p></a>
+                        
+                            </div>
+                            <div class="copyright">
+                                © All rights reserved by <a href="https://www.linkedin.com/in/abdullah-nazir-01104a296/" style="margin: 0 0;"><span>Abdullah  Nazir</span> </a>
+
+                            </div>
+                        </footer>
+
+                        
+                        <script>
+                            let body=document.querySelector('body')
+                            let namer=document.querySelector('.namer')
+                            let namer2=document.querySelector('.namer-2')
+                            let copyright=document.querySelector('.copyright')
+                            let overlay=document.querySelector('.overlay')
+                            let button=document.querySelector('.Dark-button')
+                            let ic=document.querySelector('.image-changer')
+                            let btn=document.querySelector('.btn')
+                            let ccc=document.querySelector('.ccc')
+                            // let pc=document.querySelector('.PROJECTS')
+                            
+                            
+                            button.addEventListener('click',function(){
+                            
+                            // namer.style.color='#6f42c1'
+                            //     namer2.style.color='#6f42c1'
+                            //     copyright.style.color='black'
+                            //     body.style.background='white'
+                            
+                               let isDarkMode = body.style.background === 'white';
+                            
+                            // Toggle theme and colors with smooth transitions
+                            body.style.background = isDarkMode ? 'black' : 'white'
+                            ic.src = isDarkMode ? 'sun (2).png' :'crescent-moon.png'
+                            btn.style.background = isDarkMode ? 'black' : 'white'
+                            btn.style.color = isDarkMode ? 'white' : 'black'
+                            ccc.style.color = isDarkMode ? 'white' : 'black'
+                            
+                            namer.style.color = isDarkMode ? 'white' : 'black';
+                            // pc.style.color = isDarkMode ? 'white' : 'black';
+                            namer2.style.color = isDarkMode ? 'white' : 'black';
+                            copyright.style.color = isDarkMode ? 'white' : 'black';
+                            body.style.transition=isDarkMode ? '2s' : '2s';
+                            
+                            // body.style.zIndex=isDarkMode ? '100000' : '10000';
+                            // overlay.style.display=isDarkMode ? 'none' : 'block';
+                            
+                            
+                            })
+                            
+                            
+                            </script>        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>

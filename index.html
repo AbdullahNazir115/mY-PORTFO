@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="My portfolio.css"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="icon" href="briefcase.png">
+    <title>Porfolio</title>
+</head>
+<!-- <img src="portfolio.png" alt=""> -->
+<style>
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background: white; */
+}
+body{
+    background-color: #0f0e0e;
+    font-family: 'Nunito Sans', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+
+}
+a:hover{
+color: white;
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1336px) {
+body .left{
+    margin-right: 17px;
+}
+}
+@media screen and (min-width: 1000px) and (max-width: 1220px) {
+
+   .covered .image img {
+  border-radius: 34px 1px;
+  width: 215px;
+    height: 220px;
+    }
+   .left .first-component {
+  background-color: #5b5b5ba3;
+  width: 47vw;
+    margin-left: 43px;
+    }
+    .text h1 {
+  text-align: center;
+  width: 189px;
+  margin-bottom: 23px;
+  font-size: 32px;
+    }
+   a .right-1{
+        width: 22vw;
+    }
+
+   a .left-1{
+        width: 22vw;
+    }
+  .middle-section  .left {
+ 
+  margin-right: 16px;}
+
+.right .first-component-2{
+    width: 93%;
+}
+a .inlets-1 {
+  background-color: #5b5b5ba3;
+  width: 23vw;}
+    .text p {
+  text-align: center;
+  margin: 4px 15px;
+  color: #BCBCBCB7;
+  font-size: 13px;
+}
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1130px) {
+    .covered .image img {
+  border-radius: 34px 1px;
+  width: 180px;
+    height: 181px;
+    }
+
+   .covered .text {
+ 
+  margin: 0 0px;}
+
+}
+
+    a{
+color: #676767;
+transition: color 0.5s ease; /* 0.5s duration with ease transition */
+
+text-decoration: none;
+margin: 0 30px;
+
+    }
+.navbar{
+    display: flex;
+  justify-content: space-between;
+  height: 124px;
+  align-items: center;
+}
+.nav{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: ;     */
+}
+.nav-2{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: white;
+}
+.nav-2 p{
+   /* margin: 0 30px;  */
+}
+.middle-section{
+    display: flex;
+  justify-content: center;
+  height: 353px;
+}
+.left , .right{
+display: flex;
+/* flex-basis: 50%; */
+}
+.navbar h1{
+    color: white;
+}
+
+.contact button{
+   padding: 12px 30px;
+   border-radius: 15px;
+  border: 0;
+  background: #323232;
+  color: white;
+
+}
+.left{
+    display: flex;
+  justify-content: end;
+  /* flex-direction: column; */
+  /* height: 1000px; */
+  margin-right: 29px;
+  margin-top: 61px;
+}
+.right{
+    display: flex;
+  justify-content: start;
+  /* height: 1000px; */
+  margin-top: 61px;
+  flex-direction: column;
+  height: 342px;
+
+}
+.first-component{
+    background-color: #5b5b5ba3;
+  width: 595px;
+  height: 300px;
+  border-radius: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+.text {
+    color: white;
+    display: flex;
+  flex-direction: column;
+  margin: 0 11px;
+  justify-content: center;
+}
+.text pre{
+    width: 228px;
+  position: relative;
+  right: -30px;
+  font-size: 15px;
+  color: #BCBCBCB7;
+  font-family: 'Nunito Sans', sans-serif;
+
+
+}
+
+.container {
+   
+    text-align: center;
+  width: 518px;
+  overflow: hidden;
+}
+
+.moving-text {
+    font-size: 17px;
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    animation: moveLeft 5s linear infinite; /* Apply the animation to the text */
+    margin-bottom: 0px;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position */
+    }
+}
+
+.text p{
+    text-align: center;
+  /* margin: 4px 15px; */
+  color: #BCBCBCB7;
+  margin: 4px 21px;
+
+}
+.text h1{
+    text-align: center;
+  width: 189px;
+  margin-bottom: 23px;
+  margin-left: 10px;
+}
+.tilt{
+    text-align: center;
+  width: 137px;
+}
+
+.first-component-2{
+    background-color: #5b5b5ba3;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+  width: 500px;
+  height: 53px;
+  border-radius: 82px;
+  width: 556px;
+  overflow: hidden;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.second-component-1{
+  
+   display: flex;
+ 
+   
+}
+.left-1{
+    background-color: #5b5b5ba3;
+  width: 266px;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 0px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+.items-3{
+    background-color: #5b5b5ba3;
+  width: 166px;
+  height: 175px;
+  border-radius: 42px;
+  margin: 0 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #2c2b2b 100%);
+  border: 1px solid #f9f1f10d;
+
+}
+
+.right-1{
+    background-color: #5b5b5ba3;
+  width: 266px;
+  height: 222px;
+  border-radius: 42px;
+  margin:28px 23px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+.second-component{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 286px;
+}
+
+.second-component-2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* height: 263px; */
+   height: 187px;
+}
+.inlets-1{
+    /* background-color: orange; */
+  width: 266px;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+.inlets-2{
+    background-color: #5b5b5ba3;
+    width: 544px;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+
+.inlets-2-2{
+    background-color: #5b5b5ba3;
+    width: 573px;
+    justify-content: center;
+  height: 200px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+  display: flex;
+  align-items: center;
+
+}
+
+
+.inlets-3{
+    background-color: #5b5b5ba3;
+  width: 266px;
+  height: 222px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+
+}
+.me{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    height: 150px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    /* height: 150px; */
+}
+footer{
+    height: 374px;
+}
+.image img{
+    border-radius: 51px;
+  width: 216px;
+  height: 214px;
+  object-fit: cover;
+  border-radius: 34px 1px;
+}
+.covered{
+    display: flex;
+}
+.img-1{
+    height: 146px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.about-me h1{
+    font-size: 24px;
+    color: white;
+}
+
+.about-me-2 h1{
+    font-size: 31px;
+    color: white;
+}
+.about-me p{
+    font-size: 12px;
+  color: #BCBCBCB7;
+  margin-bottom: 3px;
+  /* margin-left: -20px; */
+
+}
+.details{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.details-4{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+
+.details-2{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.details-2 .l{
+    margin: 0 35px;
+}
+
+.details-2 .l2{
+    margin: 0 35px;
+}
+.l2 img{
+    transform: rotate(92deg);
+    cursor: pointer;
+}
+.about-me .img-1 img{
+    margin: 0 15px;
+}
+.items-3 .img-3{
+    height: 79px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.centered{
+    font-size: 15px;
+  color: #BCBCBCB7;
+  margin-bottom: 3px;
+  text-align: center;
+}
+.left-corner{
+        width: 100px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    }
+
+    .inlets-2-2-2{
+    background-color: #5b5b5ba3;
+    width: 573px;
+    /* justify-content: center; */
+  height: 200px;
+  border-radius: 42px;
+  margin: 28px 10px;
+  background-image: linear-gradient(120deg, #232323 0%, #111010 100%);
+  display: flex;
+  /* align-items: center; */
+
+}
+.thanks{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+ .white{
+    color: white;
+    
+}
+.one-t{
+    display: flex;
+    flex-direction: column;
+
+}
+.blue{
+    color: #0858CA;
+    margin: 0 10px;
+}
+.copyright span{
+    color: #5B78F6;
+    margin: 0 3px;
+}
+.contact{
+    margin: 0 30px;
+    display: flex;
+}
+.name{
+    margin: 0 30px;
+}
+
+@media screen and (min-width:950px) {
+
+    .contact{
+    margin: 0 32px;
+}
+.name{
+    margin: 0 60px;
+}
+}
+
+@media screen and (max-width:295px) {
+.thanks{
+    transform: translateY(21px);
+  margin: 0 -29px;
+
+}
+
+.inlets-2-2-2 {
+    /* width: 91vw; */
+    height: 231px;
+  }
+
+}
+@media screen and (max-width:1000px) {
+
+    .nav{
+        /* width: 100%; */
+    }
+    .middle-section{
+        display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+
+    }
+    .container {
+  text-align: center;
+  width: 86vw;
+  overflow: hidden;
+}
+    .left{
+        margin: 0 0;
+    }
+    .first-component{
+        width: 91vw;
+    }
+    .first-component-2{
+        width: 91vw;
+    }
+    .second-component-1 {
+  display: flex;
+  justify-content: center;
+}
+.left-1{
+    margin: 28px 7px;
+    width: 47vw;
+}
+.covered{
+    display: flex;
+    width: 75%;
+}
+.right-1{
+    margin: 28px 7px;
+    width: 47vw;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.second-component {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+.second-component-2{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+}
+.inlets-1{
+    width: 91vw;
+    margin: 0 0;
+}
+.inlets-2{
+    width: 91vw;
+    margin-top: 28px;
+    margin-bottom: 6px;
+}
+.inlets-3{
+    width: 91vw;
+}
+.inlets-2-2{
+    width: 91vw;
+    margin: 0 0;
+}
+.inlets-2-2-2{
+    width: 91vw;
+}
+.navbar{
+    /* height: 100%; */
+}
+.right{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+
+}
+}
+
+@media screen and (max-width:700px) {
+    .left-1{
+    /* margin: 28px 7px; */
+    width: 91vw;
+}
+.right-1{
+    /* margin: 28px 7px; */
+    width: 91vw;
+}
+.second-component-1 {
+  display: block;
+  justify-content: center;
+}
+.right{
+    height: 100%;
+}
+.container{
+
+}
+}
+.offcanvas{
+    max-width: 80%;
+    background-color: none;
+}
+.off-canvas{
+    display: none;
+}
+@media screen and (max-width:760px) {
+.off-canvas{
+    display: block;
+    margin: -3px 0px;
+}
+.tog-4{
+    display: flex;
+}
+
+.nav{
+    display: none;
+}
+.hide-4{
+    display:none;
+}
+.moon{
+    display: none;
+}
+.sun{
+}
+.name{
+    /* margin: 0 20px; */
+}
+.off-canvas{
+    /* margin: 0 20px; */
+    /* background-color: black; */
+}
+body .contact .sun{
+display: block;
+padding: 4px 10px;
+
+}
+.image-changer{
+    /* width: 20px; */
+}
+.navbar .contact{
+    margin: 0 0;
+}
+
+
+}
+@media screen and (max-width:600px) {
+
+    .offcanvas-body ul a{
+        color: white;
+}
+}
+.offcanvas-body ul{
+    display: flex;
+  flex-direction: column;
+}
+.offcanvas-body ul a{
+margin: 20px 0;
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing{
+    background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
+}
+
+@media screen and (max-width:320px) {
+
+.covered .text pre{
+
+}
+.copyright{
+    font-size: 14px;
+}
+a{
+    margin: 0 20px;
+}
+}
+
+.text span{
+    margin: 0 -12px;
+}
+
+@media screen and (max-width:621px) {
+.image img{
+    width: 250px;
+  height: 257px;
+}
+.text span {
+  margin: 0 -1px;
+}
+.inlets-2-2{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 650px;
+}
+.first-component{
+    height: 500px;
+}
+.covered{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  justify-content: center;
+  /* align-items: baseline; */
+}
+.image{
+    text-align: center;
+}
+.text h1{
+    /* margin-left: 30px;
+    width: 100%; */
+    text-align: start;
+    margin: -1px 26px;
+    display: flex;
+    /* width: 213px; */
+}
+.text{
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+    .tilt {
+  /* text-align: center; */
+  /* width: 88px; */
+}
+.text pre{
+    width: 85vw;
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    overflow: visible;
+
+}
+
+.items-3{
+    margin: 16px 0;
+}
+.img-1{
+
+  /* height: 100%; */
+}
+.inlets-2{
+    height: 614px;
+}
+.adjuster-2{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.about-me .adjuster-2 img{
+    margin: 20px 0;
+}
+.tilt{
+    margin: 0 5px;
+}
+}
+
+@media screen and (max-width:430px) {
+
+.one-t{
+    display: block;
+}
+.blue{
+    margin: 0 0;
+}
+.text pre{
+    font-size: 15px;
+    display: block;
+    text-align: center;
+  
+}
+body .navbar .sun{
+    width: 40px;
+    height: 37px;
+    padding: 0 0;
+
+
+}
+
+.image-changer{
+    width: 26px;
+}
+}
+
+@media screen and (max-width:460px) {
+.white{
+    font-size: 25px;
+}
+.blue{
+    font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+  .image img {
+    width: 226px;
+    height: 228px;
+  }
+}
+
+
+@media screen and (min-width:621px) and (max-width:768px)  {
+
+.text p{
+    font-size: 15px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width:440px) {
+    .text pre{
+    /* width: 85vw; */
+    /* display: block; */
+    /* margin-top: 15px; */
+}
+}
+.navbar .sun{
+    padding: 6px 30px;
+}
+@media screen and (min-width:751px) and (max-width:886px)  {
+
+.contact .sun{
+    padding: 3px 12px;
+}
+.contact .moon{
+    padding: 12px 15px;
+}
+.contact a{
+    margin: 0 16px;
+}
+.contact{
+    margin: 0 17px;
+}
+}
+
+.btn{
+    border: none;
+    background-color: #0f0e0e;
+
+    color: white;
+
+}
+.btn:hover{
+    background-color: #0f0e0e;
+
+}
+@media screen and (min-width: 885px) and (max-width: 888px) {
+ body .contact {
+    margin: 0 16px;
+  }
+}
+
+</style>
+<body>
+    
+
+<div class="navbar">
+    <div class="name">
+        <a href="index.html" style="color: white;"> <h1 class="namer">Abdullah </h1> </a> 
+
+    </div>
+    <div class="nav">
+        <a href="index.html"> <p>Home</p></a>
+        <a href="Projects.html"> <p>Projects</p></a>
+
+       <a href="About Me.html"> <p>About Me</p></a>
+
+    </div>
+    <div class="tog-4">
+    <div class="contact">
+      <a href="Contact Me .html" class="hide-4">  <button class="button-color moon">
+        Contact
+    </button>
+
+    
+</a>
+    <button class="Dark-button sun">
+     <img src="sun (2).png" alt="" width="30px" class="image-changer">
+ </button>
+    </div>
+    <div class="off-canvas">
+       
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="currentColor" class="bi bi-list fa-4x" viewBox="0 0 16 16" style="">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+<!-- <div  class="ham-1"></div>
+<div class="ham-1"></div>
+<div class="ham-1"></div> -->
+          </button>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel" style="visibility: hidden;">ABDULLAH</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul>
+                    <a href="index.html">HOME</a>
+                    <a href="Projects.html">PROJECTS</a>
+                    <a href="About Me.html">ABOUT ME</a>
+                    <a href="My Cv.html">MY CV</a>
+                    <a href="Contact Me .html">CONTACT</a>
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+
+
+<div class="middle-section">
+<div class="left">
+    <div class="first-component">
+        <div class="covered">
+<div class="image">
+    <img src="IMG_E0262.JPG" alt="" >
+</div>
+<div class="text">
+<p> A FRONT END REACT WEB DEV</p>
+<h1>Abdullah 
+    <br>
+    <div class="tilt">
+        Nazir.
+    </div>
+    
+</h1>
+<pre>I am a Front End React Web 
+   <span>Developer based in Lahore </span> </pre>
+</div>
+</div>
+<div class="last">
+    <!-- <img src="up-arrow.png" alt="" width="30px"> -->
+</div>
+    </div>
+
+    
+
+</div>
+
+<div class="right">
+
+<div class="first-component-2">
+<div class="container">
+    <p class="moving-text">FRONT END REACT WEB DEVELOPER AND VANILLA JS DEVELOPER</p>
+</div>
+</div>
+
+<div class="second-component-1">
+    <a href="My Cv.html" style="margin:0 0;">
+
+    <div class="left-1">
+<div class="about-me">
+    <div class="img-1">
+    <img src="project.png" alt="" width="110px">
+</div>
+
+<div class="details">
+    <div class="l">
+    <p>MORE ABOUT ME</p>
+    <h1>My Cv</h1>
+</div>
+<div class="l2">
+        <img src="up-arrow.png" alt="" width="30px">
+
+</div>
+</div>
+
+</div>
+
+    </div>
+    </a>
+    <a href="Projects.html" style="margin:0 0;">
+    <div class="right-1">
+        <div class="about-me">
+            <div class="img-1">
+            <img src="idea.png" alt="" width="110px">
+        </div>
+        
+        <div class="details">
+            <div class="l">
+            <p>SHOWCASE</p>
+            <h1>Projects</h1>
+        </div>
+        <div class="l2">
+               <img src="up-arrow.png" alt="" width="30px">
+        
+        </div>
+        </div>
+        
+        </div>
+
+    </div>
+    </a>
+</div>
+
+
+
+
+</div>
+</div>
+<div class="second-component">
+    <a href="Contact Me .html" style="margin: 0 0;">
+    <div class="inlets-1">
+        <div class="about-me">
+            <div class="img-1">
+            <img src="image.png" alt="" width="110px">
+        </div>
+        
+        <div class="details">
+            <div class="l">
+            <p style="font-size: 13px;">abdullahhnazir@gmail.com</p>
+            <h1>CONTACT</h1>
+        </div>
+        <div class="l2">
+                <img src="up-arrow.png" alt="" width="30px">
+        
+        </div>
+        </div>
+        
+        </div>
+    </div>
+    </a>
+
+    <div class="inlets-2">
+        <div class="about-me">
+            <div class="img-1 adjuster-2">
+            <img src="html-5 (1).png" alt="" width="90px">
+            <img src="css-3 (1).png" alt="" width="90px">
+            <img src="java-script.png" alt="" width="90px">
+            <img src="atom.png" alt="" width="90px">
+        </div>
+        
+        <div class="details-2">
+            <div class="l">
+            <p>SKILLS</p>
+            <h1>My Skills</h1>
+        </div>
+        <div class="l2">
+                <img src="up-arrow.png" alt="" width="30px">
+        
+        </div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="inlets-3">
+        <div class="about-me">
+            <div class="img-1">
+                <a href="https://www.linkedin.com/in/abdullah-nazir-01104a296/"   target="_main" style="margin: 0 0;">    <img src="linkedin.png" alt="" width="90px" style="cursor: pointer;"></a>
+                <a href="https://github.com/AbdullahNazir115" style="margin: 0 0;" target="_main">   <img src="github (1).png" alt="" width="90px" style="cursor: pointer;"></a>
+
+        </div>
+
+        
+        <div class="details">
+            <div class="l">
+            <p>STAY WITH ME</p>
+            <h1>Profiles</h1>
+        </div>
+        <div class="l2">
+                <img src="up-arrow.png" alt="" width="30px">
+        
+        </div>
+        </div>
+        
+        </div>
+    </div>
+    
+        </div>
+
+
+        <div class="second-component-2">
+
+           
+            
+            <div class="inlets-2-2">
+
+            <div class="items-3">
+                <div class="about-me-2">
+                    <div class="img-3">
+                        <h1>90%</h1>
+                </div>
+                
+                <div class="details-4">
+                    <div class="l">
+                   
+                        <p class="centered">HTML</p>
+                                            <p class="centered">Proficiency</p>
+                   
+                </div>
+                <div class="l2">
+                
+                </div>
+                </div>
+                
+                </div>
+            </div>
+
+
+            <div class="items-3 color-1">
+                <div class="about-me-2">
+                    <div class="img-3">
+                        <h1>80%</h1>
+                </div>
+                
+                <div class="details-4">
+                    <div class="l">
+                   
+                        <p class="centered">CSS</p>
+                                            <p class="centered">Proficiency</p>
+                   
+                </div>
+                <div class="l2">
+                
+                </div>
+                </div>
+                
+                </div>
+            </div>
+
+
+            <div class="items-3 color-2">
+
+                <div class="about-me-2">
+                    <div class="img-3">
+                        <h1>70%</h1>
+                </div>
+                
+                <div class="details-4">
+                    <div class="l">
+                   
+                        <p class="centered">JS/REACT</p>
+                                            <p class="centered">Proficiency</p>
+                   
+                </div>
+                <div class="l2">
+                
+                </div>
+                </div>
+                
+                </div>
+
+            </div>
+
+
+            </div>
+            
+            <div class="inlets-2-2-2">
+                <div class="left-corner">
+                    <img src="icon2.png" alt="">
+                </div>
+                <div class="thanks">
+                    <h1 class="white">THANKS FOR </h1>
+               <div class="one-t">   <div class="new-kid"> <h1 class="white">VISITING MY</h1></div> <h1 class="blue">PORTFOLIO</h1> </div> 
+                </div>
+            </div>
+          
+            
+                </div>
+
+                <footer>
+                    <div class="me">
+                        <div class="name">
+                            <a href="index.html" style="color: white;">       <h1 class="namer-2">Abdullah </h1> </a> 
+
+                         </div>
+                    </div>
+                    <div class="nav-2">
+                <a href="index.html"> <p>Home</p></a>
+                <a href="Projects.html"> <p>Projects</p></a>
+
+        <a href="About Me.html"> <p>About Me</p></a>
+                
+                    </div>
+                    <div class="copyright">
+            © All rights reserved by <a href="https://www.linkedin.com/in/abdullah-nazir-01104a296/" style="margin: 0 0;"><span>Abdullah  Nazir</span> </a>
+
+                    </div>
+                </footer>
+
+                <script>
+                    let body=document.querySelector('body')
+                    let namer=document.querySelector('.namer')
+                    let namer2=document.querySelector('.namer-2')
+                    let copyright=document.querySelector('.copyright')
+                    let overlay=document.querySelector('.overlay')
+                    let button=document.querySelector('.Dark-button')
+                    let ic=document.querySelector('.image-changer')
+                    let btn=document.querySelector('.btn')
+                    // let pc=document.querySelector('.PROJECTS')
+                    
+                    
+                    button.addEventListener('click',function(){
+                    
+                    // namer.style.color='#6f42c1'
+                    //     namer2.style.color='#6f42c1'
+                    //     copyright.style.color='black'
+                    //     body.style.background='white'
+                    
+                       let isDarkMode = body.style.background === 'white';
+                    
+                    // Toggle theme and colors with smooth transitions
+                    body.style.background = isDarkMode ? 'black' : 'white'
+                    ic.src = isDarkMode ? 'sun (2).png' :'crescent-moon.png'
+                    btn.style.background = isDarkMode ? 'black' : 'white'
+                    btn.style.color = isDarkMode ? 'white' : 'black'
+                    
+                    namer.style.color = isDarkMode ? 'white' : 'black';
+                    // pc.style.color = isDarkMode ? 'white' : 'black';
+                    namer2.style.color = isDarkMode ? 'white' : 'black';
+                    copyright.style.color = isDarkMode ? 'white' : 'black';
+                    body.style.transition=isDarkMode ? '2s' : '2s';
+                    
+                    // body.style.zIndex=isDarkMode ? '100000' : '10000';
+                    // overlay.style.display=isDarkMode ? 'none' : 'block';
+                    
+                    
+                    })
+                    
+                    
+                    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
