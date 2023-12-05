@@ -107,6 +107,12 @@ margin: 20px 0;
 .offcanvas.show:not(.hiding), .offcanvas.showing{
     background-image: linear-gradient(120deg, #232323 0%, #1b1a1a 100%);
 }
+@media screen and (max-width:500px) {
+
+.main .fg{
+  font-size: 22px;
+}
+}
 
 @media screen and (max-width:320px) {
 
@@ -659,9 +665,78 @@ margin: 10px 0;
     padding: 0 0;
   }
 }
+.animation-1{
+    animation: slide-in 1.0s ease-out;
+}
+
+body h1{
+  animation: fade 1.0s ease-out;
+  
+}
+body p{
+  animation: fade 1.0s ease-out;
+  
+}
+
+
+@keyframes fade {
+    0% {
+   opacity: 0.2;
+
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+opacity: 1;
+    }
+  }
+
+  @keyframes slide-in {
+
+    0% {
+scale: 0.5;
+
+    }
+
+    100% {
+
+
+    }
+  }
+
+  @keyframes slide-ini {
+
+    0% {
+scale: 0.5;
+
+    }
+
+    100% {
+
+
+    }
+  }
+  
+  .animation-2{
+    animation: slide-ini 1.0s ease-out;
+}
+.namer:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+.namer-2:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+
+ 
 
     </style>
 <body>
+
     <div class="navbar">
         <div class="name">
           <a href="index.html" style="color: white;">       <h1 class="namer">Abdullah </h1> </a> 
@@ -722,10 +797,11 @@ margin: 10px 0;
 
 <div class="main">
     <h1 class="MY-CV"> MY CV </h1>
+    <a href="https://raw.githubusercontent.com/AbdullahNazir115/MY-CV/main/Abdullah's%20Resume%20(xyz).pdf" download="Abdullahs_Resume_xyz.pdf" style="text-align: center; display: flex; justify-content: center; margin: 30px 30px; color: white; font-size: 30px;" class="fg">Download CV</a>
 
 </div>
 
-<div class="cv">
+<div class="cv animation-1">
     <img src="Screenshot (439).png" alt="">
 </div>
 
@@ -758,6 +834,8 @@ margin: 10px 0;
       let button=document.querySelector('.Dark-button')
       let ic=document.querySelector('.image-changer')
       let btn=document.querySelector('.btn')
+      let fg=document.querySelector('.fg')
+      let mycv=document.querySelector('.MY-CV')
       // let pc=document.querySelector('.PROJECTS')
       
       
@@ -774,6 +852,8 @@ margin: 10px 0;
       body.style.background = isDarkMode ? 'black' : 'white'
       ic.src = isDarkMode ? 'sun (2).png' :'crescent-moon.png'
       btn.style.background = isDarkMode ? 'black' : 'white'
+      mycv.style.color = isDarkMode ? 'white' : 'black'
+      fg.style.color = isDarkMode ? 'white' : 'black'
       btn.style.color = isDarkMode ? 'white' : 'black'
       
       namer.style.color = isDarkMode ? 'white' : 'black';
