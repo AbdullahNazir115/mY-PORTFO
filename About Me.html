@@ -21,6 +21,39 @@
 .off-canvas{
     display: none;
 }
+body h1{
+  animation: fade 1.0s ease-out;
+  
+}
+body p{
+  animation: fade 1.0s ease-out;
+  
+}
+
+
+@keyframes fade {
+    0% {
+   opacity: 0.2;
+
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+opacity: 1;
+    }
+  }
+
+  .namer:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+.namer-2:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
 
 @media screen and (max-width:760px) {
 .off-canvas{
@@ -916,6 +949,34 @@ margin: 11px 0px;
     margin: 0 16px;
   }
 }
+.animation-1{
+    animation: slide-in 1.0s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+scale: 0.5;
+
+    }
+    100% {
+
+    }
+  }
+
+  .animation-2{
+    animation: slide-ini 1.0s ease-out;
+}
+
+@keyframes slide-ini {
+    0% {
+scale: 0.5;
+
+    }
+    100% {
+
+    }
+  }
+  
 
     </style>
 <body>
@@ -982,7 +1043,7 @@ margin: 11px 0px;
         </div>
         <div class="middle-section">
         <div class="left">
-            <div class="first-component">
+            <div class="first-component animation-1">
         <div class="my-image">
             <img src="IMG_E0262.JPG" alt="" >
 
@@ -995,11 +1056,11 @@ margin: 11px 0px;
         
         <div class="right">
         
-        <div class="first-component-2">
+        <div class="first-component-2 animation-2">
             <img src="star-2.png" alt=""  width="48px" style="margin: 0 13px;transform: translateY(-6px);">  <h1 class="summary-3 ccc"> SELF-SUMMARY</h1> <img src="star-2.png" alt="" width="48px" style="transform: translateY(-4px);margin: 0 10px;">
         </div>
         
-        <div class="second-component-1">
+        <div class="second-component-1 animation-2">
         
             <div class="left-1">
                 <div class="left-corner">
@@ -1029,7 +1090,7 @@ make Static and Dynamic Single page Applications
         
                    
                     
-            <div class="inlets-2-2-exp">
+            <div class="inlets-2-2-exp animation-1">
             
                 <div class="exp">
 
@@ -1061,7 +1122,7 @@ make Static and Dynamic Single page Applications
 
             </div>
             
-            <div class="inlets-2-2">
+            <div class="inlets-2-2 animation-2">
             
                 <div class="exp">
                     <div class="exp-part-1">
@@ -1089,7 +1150,7 @@ make Static and Dynamic Single page Applications
 
         <div class="second-component">
         <a href="My Cv.html" class="de-margin">
-            <div class="inlets-1">
+            <div class="inlets-1 test-1">
                     <div class="about-me">
                         <div class="img-1">
                         <img src="project.png" alt="" width="110px">
@@ -1110,7 +1171,7 @@ make Static and Dynamic Single page Applications
                     
             </div>
         </a>
-                <div class="inlets-2-2-2">
+                <div class="inlets-2-2-2 test-3">
             
                     <div class="left-corner">
                         <img src="icon2.png" alt="">
@@ -1121,8 +1182,8 @@ make Static and Dynamic Single page Applications
                     </div>
 
             </div>
-            
-            <div class="inlets-3">
+             
+            <div class="inlets-3 test-2">
                     <div class="about-me">
                         <div class="img-1">
                             <a href="https://www.linkedin.com/in/abdullah-nazir-01104a296/"   target="_main" style="margin: 0 0;">    <img src="linkedin.png" alt="" width="90px" style="cursor: pointer;"></a>
@@ -1209,6 +1270,25 @@ make Static and Dynamic Single page Applications
                             
                             
                             })
+
+                            let test1 = document.querySelector('.test-1');
+        let test2 = document.querySelector('.test-2');
+        let test3 = document.querySelector('.test-3');
+                    function scrollHandler() {
+    if (window.pageYOffset >90) {
+        test1.classList.add('animation-1');
+        test2.classList.add('animation-1');
+        test3.classList.add('animation-1');
+
+        window.removeEventListener("scroll", scrollHandler);
+    }
+    
+    console.log(pageYOffset)
+}
+
+
+window.addEventListener('scroll', scrollHandler);
+
                             
                             
                             </script>        
