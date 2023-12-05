@@ -880,6 +880,69 @@ body .navbar .sun{
   }
 }
 
+.animation-1{
+    animation: slide-in 1.4s ease-in-out;
+}
+
+body h1{
+  animation: fade 1.0s ease-out;
+  
+}
+body p{
+  animation: fade 1.0s ease-out;
+  
+}
+
+
+@keyframes fade {
+    0% {
+   opacity: 0.2;
+
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+opacity: 1;
+    }
+  }
+
+@keyframes slide-in {
+    0% {
+scale: 0.5;
+
+    }
+    100% {
+
+    }
+  }
+
+  .animation-2{
+    animation: slide-in 1.4s ease-in-out;
+}
+.namer:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+.namer-2:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+
+/*  
+  @keyframes slide-ini {
+    0% {
+    width: 36vw;
+    height: 20vw;
+
+    }
+    100% {
+
+    }
+  } */
+  
 </style>
 <body>
     
@@ -944,7 +1007,7 @@ body .navbar .sun{
 
 <div class="middle-section">
 <div class="left">
-    <div class="first-component">
+    <div class="first-component animation-1">
         <div class="covered">
 <div class="image">
     <img src="IMG_E0262.JPG" alt="" >
@@ -973,7 +1036,7 @@ body .navbar .sun{
 
 <div class="right">
 
-<div class="first-component-2">
+<div class="first-component-2 animation-2">
 <div class="container">
     <p class="moving-text">FRONT END REACT WEB DEVELOPER AND VANILLA JS DEVELOPER</p>
 </div>
@@ -982,7 +1045,7 @@ body .navbar .sun{
 <div class="second-component-1">
     <a href="My Cv.html" style="margin:0 0;">
 
-    <div class="left-1">
+    <div class="left-1 animation-2">
 <div class="about-me">
     <div class="img-1">
     <img src="project.png" alt="" width="110px">
@@ -1004,7 +1067,7 @@ body .navbar .sun{
     </div>
     </a>
     <a href="Projects.html" style="margin:0 0;">
-    <div class="right-1">
+    <div class="right-1 animation-2">
         <div class="about-me">
             <div class="img-1">
             <img src="idea.png" alt="" width="110px">
@@ -1034,7 +1097,7 @@ body .navbar .sun{
 </div>
 <div class="second-component">
     <a href="Contact Me .html" style="margin: 0 0;">
-    <div class="inlets-1">
+    <div class="inlets-1 animation-1">
         <div class="about-me">
             <div class="img-1">
             <img src="image.png" alt="" width="110px">
@@ -1055,7 +1118,7 @@ body .navbar .sun{
     </div>
     </a>
 
-    <div class="inlets-2">
+    <div class="inlets-2 animation-1">
         <div class="about-me">
             <div class="img-1 adjuster-2">
             <img src="html-5 (1).png" alt="" width="90px">
@@ -1078,7 +1141,7 @@ body .navbar .sun{
         </div>
     </div>
     
-    <div class="inlets-3">
+    <div class="inlets-3 animation-2">
         <div class="about-me">
             <div class="img-1">
                 <a href="https://www.linkedin.com/in/abdullah-nazir-01104a296/"   target="_main" style="margin: 0 0;">    <img src="linkedin.png" alt="" width="90px" style="cursor: pointer;"></a>
@@ -1108,7 +1171,7 @@ body .navbar .sun{
 
            
             
-            <div class="inlets-2-2">
+            <div class="inlets-2-2 test-1">
 
             <div class="items-3">
                 <div class="about-me-2">
@@ -1180,7 +1243,7 @@ body .navbar .sun{
 
             </div>
             
-            <div class="inlets-2-2-2">
+            <div class="inlets-2-2-2 test-2">
                 <div class="left-corner">
                     <img src="icon2.png" alt="">
                 </div>
@@ -1251,8 +1314,24 @@ body .navbar .sun{
                     
                     
                     })
-                    
-                    
+
+        let test1 = document.querySelector('.test-1');
+        let test2 = document.querySelector('.test-2');
+                    function scrollHandler() {
+    if (window.pageYOffset >90) {
+        test1.classList.add('animation-1');
+        test2.classList.add('animation-1');
+
+        window.removeEventListener("scroll", scrollHandler);
+    }
+    
+    console.log(pageYOffset)
+}
+
+
+window.addEventListener('scroll', scrollHandler);
+
+
                     </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
