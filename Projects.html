@@ -628,7 +628,78 @@ margin: 10px 0;
 }
 
 
+
+
 }
+
+.animation-1{
+    animation: slide-in 1.0s ease-out;
+}
+
+body h1{
+  animation: fade 1.0s ease-out;
+  
+}
+body p{
+  animation: fade 1.0s ease-out;
+  
+}
+
+
+@keyframes fade {
+    0% {
+   opacity: 0.2;
+
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+opacity: 1;
+    }
+  }
+
+  @keyframes slide-in {
+
+    0% {
+scale: 0.5;
+
+    }
+
+    100% {
+
+
+    }
+  }
+
+  @keyframes slide-ini {
+
+    0% {
+scale: 0.5;
+
+    }
+
+    100% {
+
+
+    }
+  }
+  
+  .animation-2{
+    animation: slide-ini 1.0s ease-out;
+}
+.namer:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+.namer-2:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+
+ 
 
 @media screen and (max-width:750px) {
 
@@ -774,7 +845,7 @@ margin: 10px 0;
 </div>
 
 <div class="projects">
-    <div class="project-1 width-2">
+    <div class="project-1 width-2 animation-1">
         <div class="layout">
             <img src="Screenshot (371).png" alt="" >
         </div>
@@ -811,7 +882,7 @@ margin: 10px 0;
     </div>
 
     <div class="projects">
-        <div class="project-1 width">
+        <div class="project-1 width animation-1">
 
             <div class="layout-4">
                 <img src="Screenshot (367).png" alt="" >
@@ -844,7 +915,7 @@ margin: 10px 0;
     </div>
 
     <div class="projects">
-        <div class="project-1">
+        <div class="project-1 animation-2">
 
             <div class="layout-4-2">
                 <img src="Screenshot (379).png" alt="" >
