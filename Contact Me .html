@@ -116,7 +116,74 @@ a{
 }
 
 
+.animation-1{
+    animation: slide-in 1.0s ease-out;
+}
 
+body h1{
+  animation: fade 1.0s ease-out;
+  
+}
+body p{
+  animation: fade 1.0s ease-out;
+  
+}
+
+
+@keyframes fade {
+    0% {
+   opacity: 0.2;
+
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+opacity: 1;
+    }
+  }
+
+  @keyframes slide-in {
+
+    0% {
+scale: 0.5;
+
+    }
+
+    100% {
+
+
+    }
+  }
+
+  @keyframes slide-ini {
+
+    0% {
+scale: 0.5;
+
+    }
+
+    100% {
+
+
+    }
+  }
+  
+  .animation-2{
+    animation: slide-ini 1.0s ease-out;
+}
+.namer:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+.namer-2:hover{
+    /* transform: translateY(-10px); */
+    transition: font-size 0.5s ease-in-out;
+    font-size: 41px;
+}
+
+ 
 
     body{
         background-color: #0f0e0e;
@@ -813,7 +880,7 @@ width: 470px;
     </div>
 
 <div class="contacter">
-    <div class="contact-container">
+    <div class="contact-container animation-1">
         <h1>Contact ME</h1>
 
         
